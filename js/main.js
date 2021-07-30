@@ -1,5 +1,5 @@
 jQuery(document).ready(function( $ ) {
-
+  $('#header').addClass('header-scrolled');
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -14,13 +14,13 @@ jQuery(document).ready(function( $ ) {
   });
 
   // Header fixed on scroll
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-    } else {
-      $('#header').removeClass('header-scrolled');
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 100) {
+  //     $('#header').addClass('header-scrolled');
+  //   } else {
+  //     $('#header').removeClass('header-scrolled');
+  //   }
+  // });
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
