@@ -9,12 +9,42 @@
         <link rel="stylesheet" href="test2.css">
     <title>Hello, world!</title>
 </head>
+<style>
 
+@media (min-width: 426px) { 
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 49% ;
+}
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 769px) { 
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 33% ;
+}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1025px) { 
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 25% ;
+}
+}
+@media (min-width: 1439px) { 
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16% ;
+}
+ }
+</style>
 <body>
     <div class="container">
         <div class="row">
             <h2 class="text-center py-5 myStyleHeadings" >Conference Commitee</h2>
-         <div class="col-md-2 ">
+         <div class="col-md-2">
           <div class="card baseBlock myStyleCardOuter">
          <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="./images/sudha-murty.png" data-holder-rendered="true">
          <div class="card-body myStyleCard">
@@ -390,6 +420,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
 </html>
 
