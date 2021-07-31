@@ -134,7 +134,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   // Timer
-var target_date = new Date().getTime() + (1000*3600*72); // set the countdown date
+var target_date = Date.parse("March 16, 2022")
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
