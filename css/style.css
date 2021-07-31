@@ -605,7 +605,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #d29e02;
 }
 
+#about .about-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #d29e02;
+}
+
 #intro .about-btn:hover {
+  background: #d29e02;
+  color: #fff;
+}
+
+#about .about-btn:hover {
   background: #d29e02;
   color: #fff;
 }
@@ -690,7 +712,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	width: 465px;
 	height: 150px;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.3);
+	background: #222;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
 	border: 1px solid #111;
 	border-radius: 5px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
@@ -704,7 +730,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	content:"";
 	width: 8px;
 	height: 65px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
 	border: 1px solid #111;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
@@ -718,7 +748,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	content:"";
 	width: 8px;
 	height: 65px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
 	border: 1px solid #111;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
@@ -737,8 +771,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 	max-width: 92px;
 	font: bold 48px 'Droid Sans', Arial, sans-serif;
 	text-align: center;
-	color: rgb(255, 255, 255);
-	background-color: rgba(0, 0, 0, 0.2);
+	color: #111;
+	background-color: #ddd;
+	background-image: -webkit-linear-gradient(top, #bbb, #eee); 
+	background-image:    -moz-linear-gradient(top, #bbb, #eee);
+	background-image:     -ms-linear-gradient(top, #bbb, #eee);
+	background-image:      -o-linear-gradient(top, #bbb, #eee);
+	border-top: 1px solid #fff;
 	border-radius: 3px;
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
 	margin: 0 7px;
@@ -751,6 +790,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	content:"";
 	width: 100%;
 	height: 13px;
+	background: #111;
 	display: block;
 	padding: 0 3px;
 	position: absolute;
@@ -762,6 +802,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	content:"";
 	width: 100%;
 	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
 	display: block;
 	position: absolute;
 	top: 48%; left: 0;
@@ -778,7 +820,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #countdown .labels li{
 	width: 102px;
 	font: bold 15px 'Droid Sans', Arial, sans-serif;
-	color: #ffffff;
+	color: #000000;
 	text-shadow: 0px 0px 0px #000;
 	text-align: center;
 	text-transform: uppercase;
