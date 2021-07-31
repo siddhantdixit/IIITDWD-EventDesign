@@ -240,14 +240,14 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f105";
 }
 
-/* Nav Meu Container */
+/* Nav Menu Container */
 
 #nav-menu-container {
   float: right;
   margin: 0;
 }
 
-/* Nav Meu Styling */
+/* Nav Menu Styling */
 
 .nav-menu a {
   padding: 8px;
@@ -457,7 +457,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg2.jpg) top center;
+  background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -680,6 +680,129 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Timer
+--------------------------------------------------------------*/
+
+#countdown{
+	width: 465px;
+	height: 150px;
+	text-align: center;
+	background: #222;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	border: 1px solid #111;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+	margin: 0px;
+	padding: 24px 0;
+	position: relative;
+  top: 0; bottom: 0; left: 25px; right: 0;
+}
+
+#countdown:before{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	border: 1px solid #111;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; 
+  left: -10px;
+}
+
+#countdown:after{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #aaa, #aaa, #aaa, #aaa); 
+	background-image:    -moz-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:     -ms-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	background-image:      -o-linear-gradient(top, #aaa, #aaa, #aaa, #aaa);
+	border: 1px solid #111;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; right: -10px;
+}
+
+#countdown #tiles{
+	position: relative;
+	z-index: 1;
+}
+
+#countdown #tiles > span{
+	width: 92px;
+	max-width: 92px;
+	font: bold 48px 'Droid Sans', Arial, sans-serif;
+	text-align: center;
+	color: #111;
+	background-color: #ddd;
+	background-image: -webkit-linear-gradient(top, #bbb, #eee); 
+	background-image:    -moz-linear-gradient(top, #bbb, #eee);
+	background-image:     -ms-linear-gradient(top, #bbb, #eee);
+	background-image:      -o-linear-gradient(top, #bbb, #eee);
+	border-top: 1px solid #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+	margin: 0 7px;
+	padding: 18px 0;
+	display: inline-block;
+	position: relative;
+}
+
+#countdown #tiles > span:before{
+	content:"";
+	width: 100%;
+	height: 13px;
+	background: #111;
+	display: block;
+	padding: 0 3px;
+	position: absolute;
+	top: 41%; left: -3px;
+	z-index: -1;
+}
+
+#countdown #tiles > span:after{
+	content:"";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%; left: 0;
+}
+
+#countdown .labels{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	position: relative;
+	bottom: -4px;
+}
+
+#countdown .labels li{
+	width: 102px;
+	font: bold 15px 'Droid Sans', Arial, sans-serif;
+	color: #000000;
+	text-shadow: 0px 0px 0px #000;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
 }
 
 /*--------------------------------------------------------------
