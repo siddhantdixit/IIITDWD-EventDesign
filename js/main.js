@@ -134,7 +134,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   // Timer
-var target_date = Date.parse("Jan 16, 2022")
+var target_date = Date.parse("Aug 15, 2021")
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
