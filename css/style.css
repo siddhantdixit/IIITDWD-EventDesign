@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -619,16 +619,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #d29e02;
+  border: 2px solid #2e4dff;
 }
 
 #intro .about-btn:hover {
-  background: #d29e02;
+  background: #2e4dff;
   color: #fff;
 }
 
 #about .about-btn:hover {
-  background: #d29e02;
+  background: #2e4dff;
   color: #fff;
 }
 
@@ -935,7 +935,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #d29e02;
+  background-color: #2e4dff;
   color: #fff;
 }
 
@@ -1158,7 +1158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #d29e02;
+  background-color: #2e4dff;
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -1166,7 +1166,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #d29e02;
+  border: 6px solid #2e4dff;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
