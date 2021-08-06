@@ -1181,7 +1181,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #sponsors {
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 
 #sponsors .sponsors-wrap {
