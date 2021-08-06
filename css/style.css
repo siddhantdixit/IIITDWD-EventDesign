@@ -15,7 +15,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #d29e02;
+  color: #2e4dff;
   outline: none;
   text-decoration: none;
 }
@@ -892,7 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details .social a:hover {
-  background: #d29e02;
+  background: #2e4dff;
   color: #fff;
 }
 
@@ -1489,7 +1489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #d29e02;
+  background: #2e4dff;
   border: 0;
   padding: 10px 40px;
   color: #fff;
