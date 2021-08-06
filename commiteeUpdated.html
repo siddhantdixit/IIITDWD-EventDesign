@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,7 +16,7 @@
     }
 
     .proff-names{
-        font-weight: 300;
+        font-weight: 500;
     }
 
     * {
@@ -31,10 +31,22 @@
                     grid-template-columns: repeat(1, 2fr) !important;
 
                 }
+                .pc {
+                    display: grid !important;
+                    gap: 1rem !important;
+                    grid-template-columns: repeat(1, 2fr) !important;
+
+                }
     }
 
                 @media only screen and (min-width: 300px) and (max-width:500px) {
                     .cc {
+                    display: grid !important;
+                    gap: 2rem !important;
+                    grid-template-columns: repeat(1, 2fr) !important;
+
+                }
+                .pc {
                     display: grid !important;
                     gap: 2rem !important;
                     grid-template-columns: repeat(1, 2fr) !important;
@@ -49,14 +61,38 @@
                     grid-template-columns: repeat(2, 2fr) !important;
 
                 }
+                .pc {
+                    display: grid !important;
+                    gap: 2rem !important;
+                    grid-template-columns: repeat(2, 2fr) !important;
+
+                }
                 }
 
                 @media (min-width: 800px) {
                     .cc {
                     display: grid !important;
                     gap: 2rem !important;
+                    grid-template-columns: repeat(1, 2fr) !important;
+
+                }
+                .pc {
+                    display: grid !important;
+                    gap: 2rem !important;
                     grid-template-columns: repeat(4, 2fr) !important;
 
+                }
+                .patron{
+                    display: grid;
+                }
+                .cmc{
+                    display:  flex !important;
+                    margin-right: 25px;
+                    
+                    /* flex-direction: row !important; */
+                }
+                .cmc1{
+                    display: inline-block;
                 }
                 }
 
@@ -84,29 +120,54 @@
 
 <body>
     <h2 style="text-align: center; color: rgb(36, 62, 211); font-weight: bolder!important; margin-top: 20px;">Conference Commitee</h2>
-    <div class="cc">
+    <!-- <div class="cc"> -->
 
-        <div class="item1"> <div class="position-role">Patron</div> <br> <div class="proff-names">Smt. Sudha Murthy <br>Chairperson of Infosys Foundation</div></div>
-        <div class="item1"> <div class="position-role">General Chair</div> <br><div class="proff-names">Prof. Kavi Mahesh <br>Director, IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Organizing Chair</div> <br><div class="proff-names">Prof. Uma Sheshadri <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Conference Management Chairs</div> <br> <div class="proff-names">Dr. Prabhu Prasad <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Conference Management Chairs</div> <br><div class="proff-names">Dr. Pramod C. Mane <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Sponsorship and Exhibits Chairs</div> <br><div class="proff-names">Dr. Deepak K.T. <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Sponsorship and Exhibits Chairs</div> <br><div class="proff-names">Dr. Pavan Kumar C <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Publication Chairs</div> <br><div class="proff-names">Dr. Rajendra Hegadi <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Publication Chairs</div> <br><div class="proff-names">Dr.Jagadeesha R B <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Publicity and Social Media Chairs </div><br><div class="proff-names">Dr. Loyimee Gogoi <br>NPU, P.R.China</div></div>
-        <div class="item1"> <div class="position-role">Publicity and Social Media Chairs </div><br><div class="proff-names">Dr. Shruti Bhilare <br>DAIICT, Gandhinagar</div></div>
-        <div class="item1"> <div class="position-role">Publicity and Social Media Chairs </div><br><div class="proff-names">Dr. Vishal Sathwane <br>NIT Raipur</div></div>
-        <div class="item1"> <div class="position-role">Publicity and Social Media Chairs </div><br><div class="proff-names">Dr. Sadhvi Manerikar <br>IIIT Dharwad </div></div>
-        <div class="item1"> <div class="position-role">Workshop Chair</div> <br><div class="proff-names">Dr. Amit Dua <br>BITS-Pilani</div></div>
-        <div class="item1"> <div class="position-role">Workshop Chair</div> <br><div class="proff-names">Dr. Basant Subba <br>NIT Hamirpur</div></div>
-        <div class="item1"> <div class="position-role">Workshop Chair</div> <br><div class="proff-names">Dr. Manish Sarkhel <br>TAPMI, Manipal</div></div>
-        <div class="item1"> <div class="position-role">Workshop Chair</div> <br><div class="proff-names">Dr. Vandana <br>IIIT Dharwad</div></div>
-        <div class="item1"> <div class="position-role">Workshop Chair</div> <br><div class="proff-names">Dr.Balaprakasa Rao Killi<br>NIT Warangal</div></div>
-    </div>
+        <div class="item1 patron"> <div class="position-role"style="
+            font-size: large;
+        " >Patron</div> <br> <div class="proff-names">Smt. Sudha Murthy <br>Chairperson of Infosys Foundation</div></div>
+        <div class=" item1 generalChair"> <div class="position-role"style="
+            font-size: large;
+        ">General Chair</div> <br><div class="proff-names">Prof. Kavi Mahesh <br>Director, IIIT Dharwad</div></div>
+        <div class="item1 organizingChair"> <div class="position-role"style="
+            font-size: large;
+        ">Organizing Chair</div> <br><div class="proff-names">Prof. Uma Sheshadri <br>IIIT Dharwad</div></div>
+        <div class="position-role">Conference Management Chairs</div>
+        <div class="item1 cmc1"> <div class="proff-names cmc">Dr. Prabhu Prasad  <br>IIIT Dharwad</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div><div class="proff-names cmc">Dr. Pramod C. Mane<br>IIIT Dharwad</div></div>
+        <div class="position-role"style="
+        font-size: large;
+    ">Sponsorship and Exhibits Chairs</div>
+        <div class="item1 cmc1"> <div class="proff-names cmc">Dr. Deepak K.T. <br>IIIT Dharwad</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div> <div class="proff-names cmc">Dr. Pavan Kumar C <br>IIIT Dharwad</div></div>
+
+
+        <div class="position-role"style="
+        font-size: large;
+    ">Publication Chairs</div>
+        <div class="item1 cmc1"> <div class="proff-names cmc">Dr. Rajendra Hegadi <br>IIIT Dharwad</div></div>
+        <div class="item1 cmc1"> <div class="position-role "></div> <div class="proff-names cmc">Dr.Jagadeesha R B <br>IIIT Dharwad</div></div>
+
+
+        <div class="position-role"style="
+        font-size: large;
+    ">Publicity and Social Media Chairs </div>
+        <div class="item1 cmc1"> <div class="proff-names cmc">Dr. Loyimee Gogoi <br>NPU, P.R.China</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div><div class="proff-names cmc">Dr. Shruti Bhilare <br>DAIICT, Gandhinagar</div></div>
+        <div class="item1 cmc1"> <div class="position-role"> </div><div class="proff-names cmc">Dr. Vishal Sathwane <br>NIT Raipur</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div><div class="proff-names cmc">Dr. Sadhvi Manerikar <br>IIIT Dharwad </div></div>
+
+
+        <div class="position-role"style="
+        font-size: large;
+    ">Workshop Chair</div>
+        <div class="item1 cmc1"> <div class="proff-names cmc">Dr. Amit Dua <br>BITS-Pilani</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div> <div class="proff-names cmc">Dr. Basant Subba <br>NIT Hamirpur</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div> <div class="proff-names cmc ">Dr. Manish Sarkhel <br>TAPMI, Manipal</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div> <div class="proff-names cmc">Dr. Vandana <br>IIIT Dharwad</div></div>
+        <div class="item1 cmc1"> <div class="position-role"></div> <div class="proff-names cmc">Dr.Balaprakasa Rao Killi<br>NIT Warangal</div></div>
+    <!-- </div> -->
     <h2 style="text-align: center; color: rgb(36, 62, 211); margin-bottom: 2rem;font-weight: bolder!important; margin-top: 60px;">Program Commitee</h2>
-    <div class="cc" style="margin-top: 40px;">
+    <div class="pc" style="margin-top: 40px;">
         <div class="item2"><a href="https://www.sc.iitb.ac.in/~ankur/ " target="blank">Dr. Ankur Kulkarni <br> IIT Bombay</a> </div>
         <div class="item2"><a href="https://www.iimk.ac.in/faculty/facultyprofile.php?pid=aghatak " target="blank">Dr. Anirban Ghatak<br>IIM Kozikode</a> </div>
         <div class="item2"><a href="https://orbit.dtu.dk/en/persons/ashutosh-dhar-dwivedi " target="blank">Ashutosh Dhar Dwivedi<br>Technical University of Denmark </a></div>
@@ -127,10 +188,10 @@
 </body>
 
     </html>
- -->
 
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -287,4 +348,4 @@
 
 </body>
 
-</html>
+</html> -->
