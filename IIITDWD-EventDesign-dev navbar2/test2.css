@@ -1,0 +1,89 @@
+body {
+	padding: 20px;
+	background: #0e1b4d;
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #fff;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.baseBlock:hover {
+	-webkit-transform: translate(0, -8px);
+	-moz-transform: translate(0, -8px);
+	-ms-transform: translate(0, -8px);
+	-o-transform: translate(0, -8px);
+	transform: translate(0, -8px);
+	box-shadow: 0 40px 40px rgb(255 255 255 / 20%);
+}
+
+body {
+	padding: 20px;
+	background: #0e1b4d;
+	font-family: var(--bs-font-sans-serif )!important;
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #fff;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.baseBlock:hover {
+	-webkit-transform: translate(0, -8px);
+	-moz-transform: translate(0, -8px);
+	-ms-transform: translate(0, -8px);
+	-o-transform: translate(0, -8px);
+	transform: translate(0, -8px);
+	box-shadow: 0 40px 40px rgb(255 255 255 / 20%);
+}
+
+.myStyleCard{
+	background-color: #ffe4cc !important;
+	color: #0e1b4d !important;
+	transition: all 0.5s ease-in-out !important;
+}
+.myStyleCard:hover{
+	background-color: #0e1b4d !important;
+	color: #ffe4cc !important;
+	/* z-index: 2 !important; */
+}
+.myStyleCard:hover h4{
+	color: #ffe4cc !important;
+}
+
+.myStyleCardOuter{
+	background-color: #396787 !important;
+}
+
+.myStyleHeadings{
+	color: #ffe4cc !important;
+}
+
+.myStyleButton{
+	white-space: normal !important;
+	background-color: #0e1b4d !important;
+	border: 2px solid #ffe4cc !important;
+	transition: all 0.5s ease-in-out !important;
+}
+.myStyleButton:hover{
+	white-space: normal !important;
+	background-color: #ffe4cc !important;
+	color: #0e1b4d !important;
+	transform: scale(1.1) !important;
+	border-radius: 20px !important;
+}
+
