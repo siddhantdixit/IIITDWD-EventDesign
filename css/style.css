@@ -721,7 +721,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	margin: 0px;
 	padding: 24px 0;
 	position: relative;
-  top: 0; bottom: 0; left: 25px; right: 0;
+  top: 0; bottom: 0; left: 5%; right: 0;
 }
 
 #countdown:before{
