@@ -90,9 +90,10 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
+    // console.log(str);
     $.ajax({
       type: "POST",
-      url: "contactform/contactform.php",
+      url: "https://thechat.in/contact.php",
       data: str,
       success: function(msg) {
         // alert(msg);
