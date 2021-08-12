@@ -1801,3 +1801,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 4vw;
   }
 }
+
+.dropdown-menu{
+  padding:7px 7px;
+}
+
+
+.dropdown-item:hover{
+  color: white !important;
+  background-color:#2e4dff;
+  border-radius: 5px ;
+ 
+
+}
