@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Event - Bootstrap Events Template</title>
+  <title>Commitee</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -19,6 +19,7 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
@@ -26,7 +27,52 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="test2.css"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+     
+     $('#content').load("programCommitee.html");     
+
+});
+
+  </script>
+
+  
+  
 </head>
+<style>
+
+  @media (min-width: 426px) { 
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 49% ;
+  }
+   }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 769px) { 
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 33% ;
+  }
+  }
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1025px) { 
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 25% ;
+  }
+  }
+  @media (min-width: 1439px) { 
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 16% ;
+  }
+   }
+  </style>
 
 <body>
 
@@ -37,7 +83,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro">SMCA</a></h1>
+        <h1><a style="text-decoration: none;" href="#intro">SMCA</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -52,61 +98,23 @@
             </ul>
           </li>
           <!-- <li><a href="#">For Authors</a></li> -->
-          <li><a href="commitee.html">Committee</a>
+          <li class="menu-active"><a href="commitee.html">Committee</a>
             <ul class="dropdown-menu">
-              <li><a href="commitee.html">Conference Committee</a></li>
-              <li><a href="commiteeP.html">Program Committee</a></li>
-            </ul></li>
-          <li class="menu-active"><a href="speaker-details.html">Keynote Speakers</a></li>
+                <li><a href="commitee.html">Conference Committee</a></li>
+                <li><a href="commiteeP.html">Program Committee</a></li>
+              </ul></li>
+         
+          <li><a href="speaker-details.html">Keynote Speakers</a></li>
           <li><a href="registrations.html">Registrations</a></li>
           <li><a href="institue.html">Organizer</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <!-- <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> -->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
 
-  <main id="main" class="main-page">
 
-    <!--==========================
-      Speaker Details Section
-    ============================-->
-    <section id="speakers-details" class="wow fadeIn">
-      <div class="container">
-        <div class="section-header">
-          <h2>Will be updated.....</h2>
-          <!-- <p>Praesentium ut qui possimus sapiente nulla.</p> -->
-        </div>
-<!-- 
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-          </div>
-
-          <div class="col-md-6">
-            <div class="details">
-              <h2>Lorem Ipsum</h2>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-              <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
-
-              <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.</p>
-
-              <p>Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia corrupti omnis error vel quia omnis velit. In qui debitis autem aperiam voluptates unde sunt et facilis.</p>
-            </div>
-          </div>
-
-        </div> -->
-      </div>
-
-    </section>
-
-  </main>
+  <div id="content" style="padding-top: 50px;padding: 50px 10%;margin-top: 40px;"></div>
 
   <!--==========================
     Footer
@@ -195,6 +203,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  
 </body>
+
 </html>
