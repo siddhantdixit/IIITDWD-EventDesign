@@ -30,9 +30,14 @@
   <!-- <link rel="stylesheet" href="test2.css"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script>
+  $(document).ready(function(){
+     
+     $('#content').load("workshopupdated.html");     
+
+});
+
+  </script>
 
   
   
@@ -67,40 +72,7 @@
       width: 16% ;
   }
    }
-    h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #243ed3;
-    margin-top: 30px;
-    font-size: 2rem;
-  }
-  
-  h4 {
-    color: gray;
-    font-weight: 200;
-    font-size: 20px;
-  }
-  #head {
-    margin-top: 10px;
-  }
-  @media only screen and (min-width: 0px) and (max-width: 522px) {
-    h1 {
-      font-size: 20px;
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-  }
-  @media only screen and (min-width: 0px) and (max-width: 346px) {
-    h1 {
-      font-size: 20px;
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-  }
-  
   </style>
-  
 
 <body>
 
@@ -143,57 +115,6 @@
 
 
   <div id="content" style="padding-top: 50px;padding: 50px 10%;margin-top: 40px;"></div>
-  <!-- =====================
-  Main
-======================== -->
-<hr>
-
-
-<h1 id="heading">Workshop Committee </h1>
-
-<hr>
-<div class="row">
-    <div class="col-sm-4">
-      <h4>Workshop Chairs</h4>
-      <img height="150px" width="135px" style="display: flex;" src="images/amit dua.jpg" alt=""><br>
-
-      Amit Dua<br>BITS-Pilani
-    </div>
-    <div class="col-sm-4">
-      <h4></h4>
-      <br>
-      <img height="150px" width="135px" style="display: flex;" src="images/balaprakasa.png" alt=""><br>
-     Balaprakasa Rao Killi<br>
-      NIT Warangal
-    </div>
-
-    <div class="col-sm-4">
-      <h4></h4>
-      <br>
-      <img height="150px" width="135px" style="display: flex;" src="images/basant.png" alt=""><br>
-     Basant Subba<br>
-      NIT Hamirpur
-    </div>
-
-
-  </div>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <h4></h4>
-      <img height="150px" width="135px" style="display: flex;" src="images/manish_sarkhel.png" alt=""><br>
-     Manish Sarkhel<br>
-      TAPMI, Manipal
-    </div>
-
-    <div class="col-sm-4">
-      <h4></h4>
-      <img height="150px" width="135px" style="display: flex;" src="images/Dr.Vandana.png" alt=""><br>
-     Vandana<br>
-      IIIT Dharwad
-    </div>
-  </div>
-  <hr>
 
   <!--==========================
     Footer
