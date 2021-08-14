@@ -44,36 +44,10 @@
         <h1><a href="#intro">SMCA</a></h1>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
+      <div id="mynavigation-bar">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Call for Paper
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a style="color: black;" class="dropdown-item" href="call-for-paper.html">CFP</a><br/>
-            <a style="color: black;" class="dropdown-item" href="imp_dates.html">Important Dates</a><br/>
-            <a style="color: black;" class="dropdown-item" href="submissions.html">Submissions</a><br/>
-          </div>
-          </li>
-          
-          <!-- <li><a href="#">For Authors</a></li> -->
-          <li><a href="">Committee</a>
-            <ul class="dropdown-menu">
-              <li><a href="commitee.html">Conference Committee</a></li>
-              <li><a href="commiteeP.html">Program Committee</a></li>
-              <li><a href="workshop commitee.html">Workshop Committee</a></li>
+      </div>
 
-            </ul></li>
-          <li><a href="speaker-details.html">Keynote Speakers</a></li>
-          <li><a href="registrations.html">Registrations</a></li>
-          <li><a href="institue.html">Organizer</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <!-- <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> -->
-        </ul>
-      </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
@@ -751,6 +725,12 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-</body>
 
+  <script>
+    $.get("my-navbar.html", function(data){
+        $("#mynavigation-bar").replaceWith(data);
+        $(".my-home-tab").addClass("menu-active");
+    });
+  </script>
+</body>
 </html>
