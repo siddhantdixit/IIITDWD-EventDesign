@@ -27,6 +27,23 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+
+  <script>
+    $.get("my-navbar.html", function(data){
+      $("#mynavigation-bar").replaceWith(data);
+      $(".my-home-tab").addClass("menu-active");
+    });
+  </script>
+
+  <script>
+    $.get("my-footer.html", function(data){
+      $("#myfooter-bar").replaceWith(data);
+    });
+  </script>
+
 </head>
 
 <body>
@@ -41,26 +58,10 @@
         <h1><a href="#intro">SMCA</a></h1>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li>
-            <a href="call-for-paper.html">Call for Paper</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">For Authors</a></li>
-              <li><a href="#">Option 2</a></li>
-              <li><a href="submissions.html">Submissions</a></li>
-            </ul>
-          </li>
-          <!-- <li><a href="#">For Authors</a></li> -->
-          <li><a href="commitee.html">Committee</a></li>
-          <li><a href="speaker-details.html">Keynote Speakers</a></li>
-          <li><a href="registrations.html">Registrations</a></li>
-          <li><a href="institue.html">Organizer</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <!-- <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> -->
-        </ul>
-      </nav><!-- #nav-menu-container -->
+      <div id="mynavigation-bar">
+
+      </div>
+
     </div>
   </header><!-- #header -->
 
@@ -400,75 +401,14 @@
   </main>
 
 
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  <div id="myfooter-bar">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>More Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Call for Paper</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="imp_dates.html">Important Dates</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Announcements</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="registrations.html">Registrations</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              555 Adam Street<br>
-              San Diego, CA 92105<br>
-              United States <br>
-              <strong>Phone:</strong>+1 555 123 4567<br>
-              <strong>Email:</strong>info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright 2018 Designed by <a href="http://jaiimeriios.com/">Jaime Rios</a>
-      </div>
-    </div>
-  </footer><!-- #footer -->
+  </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
+
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
