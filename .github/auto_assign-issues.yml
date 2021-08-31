@@ -1,0 +1,18 @@
+# If enabled, auto-assigns users when a new issue is created 
+# Defaults to true, allows you to install the app globally, and disable on a per-repo basis
+addAssignees: true
+
+# The list of users to assign to new issues. 
+# If empty or not provided, the repository owner is assigned
+assignees:
+  - Aditya-Eng101
+  - Anup451
+  - HarshitaNG
+  - Anup451
+  - harshrawat20
+  - Neha2109
+  - prakash02dec
+  - prateekin
+  - sreedevareddy
+  - Hitarth-Vyas
+  
