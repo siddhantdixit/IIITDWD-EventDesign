@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
     // console.log(str);
     $.ajax({
       type: "POST",
-      url: "https://thechat.in/contact.php",
+      url: "https://thechatweb.000webhostapp.com/contact.php",
       data: str,
       success: function(msg) {
         // alert(msg);
